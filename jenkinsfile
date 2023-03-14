@@ -3,7 +3,7 @@ pipeline{
 	stages {
 		stage('bash directo'){
 			steps{
-				sh '''#!/bin/bash
+				sh '#!/bin/bash
 
 				export token=$(curl --location 'https://xray.cloud.getxray.app/api/v2/authenticate' \
 				--header 'Content-Type: application/json' \
@@ -23,7 +23,7 @@ pipeline{
 				curl --location -g "https://integracionx-ray.atlassian.net/rest/api/3/issue/$key/attachments" \
 				--header 'X-Atlassian-Token: no-check' \
 				--header 'Authorization: Basic amVuaWZlci5lc3BlY2hlQHRzb2Z0bGF0YW0uY29tOkFUQVRUM3hGZkdGMGRsb0VFY1FpNkl1VENZcU5XdzdMV0lQSFd5SWxEMjRYdDhPbW9SSU1LQ1RZN1N4cHIxT2hHQlZacWpiNnFaTlk1c0NEOVcydlR2REJp>
-				--form file=@"reporteQA.pdf" '''
+				--form file=@"reporteQA.pdf" '
 	
 			}
 		}
