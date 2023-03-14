@@ -3,7 +3,7 @@ pipeline{
 	stages {
 		stage('bash con archivo'){
 			steps {
-			sh 'tarea.sh'
+				sh 'tarea.sh'
 			}
 		}
 	}
