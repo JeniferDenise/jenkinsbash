@@ -2,8 +2,8 @@ pipeline{
 	agent any
 	stages {
 		stage('nombre'){
-			step{
-			sh 'tarea.sh'	
+			steps{
+				sh 'tarea.sh'	
 			}
 		}
 	}
