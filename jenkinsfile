@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	stages {
-		stage('nombre'){
+		stage('bash mediante archivo'){
 			steps{
 				sh 'tarea.sh'	
 			}
