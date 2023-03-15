@@ -1,9 +1,9 @@
 pipeline{
 	agent any
 	stages {
-		stage('bash con archivo'){
+		stage('Saludo'){
 			steps {
-				sh 'bash tarea.sh'
+				sh 'echo Hola mundo'
 			}
 		}
 	}
