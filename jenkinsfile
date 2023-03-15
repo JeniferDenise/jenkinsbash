@@ -2,12 +2,12 @@ pipeline{
 	agent any
 
 	parameters{
-		string(name:'Diego')
+		string(name:'Jeni')
 	}
 	stages {
 		stage('Saludo con nombre'){
 			steps {
-				sh 'echo Hola ${name} como estas?'
+				sh 'echo Hola ${params.Jeni} como estas?'
 			}
 		}
 	}
